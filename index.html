@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+    <link rel="stylesheet" href="../11 - classes/estilo.css">
+</head>
+<body>
+    <h2>O que são as Classes?</h2>
+    <p>
+        No CSS, classes são seletores usados para aplicar estilos a um ou mais elementos HTML. Elas permitem definir um 
+        conjunto de estilos que pode ser reutilizado em diferentes partes da página, ajudando a manter o código 
+        organizado e fácil de atualizar.
+    </p>
+    <h3>Principais Características das Classes</h3>
+    <ol>
+        <li>
+            <strong>Identificação por Ponto (<code>.</code>)</strong>: No CSS, as classes são precedidas por um ponto 
+            (<code>.</code>). Por exemplo, se você definir uma classe <code>.titulo</code>, o CSS aplicará os estilos 
+            definidos a qualquer elemento com essa classe.
+        </li>
+        <li>
+            <strong>Reutilização em Múltiplos Elementos</strong>: Diferente do <code>id</code>, que deve ser único por 
+            página, uma classe pode ser atribuída a diversos elementos, o que facilita a aplicação consistente de estilos 
+            a vários elementos ao mesmo tempo.
+        </li>
+        <li>
+            <strong>Exemplo de Uso de Classe</strong>
+            <p>No HTML:</p>
+            <p>No HTML:</p>
+<pre><code>
+&lt;<span class="tag">p</span> <span class="attribute">class</span><span class="punctuation">=</span><span class="valor">"destaque"</span>&gt;
+Este é um parágrafo destacado.
+&lt;/<span class="tag">p</span>&gt;
+</code></pre>
+
+
+            <p>No CSS:</p>
+            <pre><code>
+<span class="selector">.destaque</span> <span class="punctuation">{</span>
+    <span class="property">color</span><span class="punctuation">:</span> <span class="value">blue</span><span class="punctuation">;</span>
+    <span class="property">font-weight</span><span class="punctuation">:</span> <span class="value">bold</span><span class="punctuation">;</span>
+    <span class="property">background-color</span><span class="punctuation">:</span> <span class="value">lightyellow</span><span class="punctuation">;</span>
+<span class="punctuation">}</span>
+            </code></pre>
+        </li>
+        <li>
+            <strong>Flexibilidade com Múltiplas Classes</strong>: Um elemento pode ter várias classes aplicadas a ele, 
+            permitindo combinações de estilos. Por exemplo, &lt;p class="destaque importante"&gt; aplicará os estilos de 
+            ambas as classes <code>destaque</code> e <code>importante</code> ao mesmo elemento.
+        </li>
+        <li>
+            <strong>Especificidade e Prioridade</strong>: As classes têm uma especificidade intermediária no CSS, mais 
+            forte que um seletor de elemento, mas menos específica que um <code>id</code>. Isso significa que se o mesmo 
+            elemento tiver um estilo aplicado por um id e por uma <code>class</code>, o estilo do <code>id</code> terá 
+            prioridade.
+        </li>
+    </ol>
+    <p>
+        Classes são fundamentais no CSS porque ajudam a criar layouts consistentes e reaproveitáveis, além de facilitar 
+        o gerenciamento de estilos em páginas complexas.
+    </p>
+</body>
+</html>
